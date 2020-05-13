@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main ()
+{
+    int i,j,n;
+    scanf("%d",&n);
+    char k='A';
+    for(i=1;i<=n;i++){
+        for(j=1;j<=51;j++){
+            if(j>=n+1-i && j<=n-1+i){
+                printf("%c",k);
+                j<n?k--:k++;
+            }
+                else
+                    printf(" ");
+
+
+
+        }
+        printf("\n");
+    }
+}
