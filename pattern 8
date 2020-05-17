@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+    int i,j,b=10,c=7,a = -5;
+    char k;
+    for(i=1;i<=5;i++){
+        a+=2;
+        k='A';
+        b--;
+        c++;
+        for(j=1;j<=17;j++){
+                if(j>=6-a && j<=12+a){
+        printf("%c",k);
+        if(j<9)
+          j<b?k++:k--;
+          if(j>=9)
+            j>c?k--:k++;
+                }
+         else
+                printf(" ");
+        }
+        printf("\n");
+    }
+}
